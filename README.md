@@ -21,6 +21,10 @@ A Chrome extension that lets you freely switch between different view modes in N
 - Responsive design that adapts to screen size
 - Consistent card sizing for organized UI
 
+## Demo
+
+![NotesHub View Switcher Demo](docs/images/forReadme.gif)
+
 ## Installation
 
 ### From Chrome Web Store

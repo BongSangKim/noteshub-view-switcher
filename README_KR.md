@@ -21,6 +21,10 @@ NotesHub의 파일 목록 뷰를 자유롭게 전환할 수 있는 Chrome 확장
 - 반응형 디자인으로 화면 크기에 따라 자동 조정
 - 일관된 카드 크기로 정돈된 UI 제공
 
+## Demo
+
+![NotesHub View Switcher Demo](docs/images/forReadme.gif)
+
 ## 설치 방법
 
 ### Chrome 웹 스토어에서 설치
