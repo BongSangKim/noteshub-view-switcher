@@ -1,0 +1,198 @@
+/* Grid Layout */
+.noteshub-grid-layout {
+  --grid-item-width: 200px;
+  --grid-gap: 16px;
+  --grid-padding: 8px;
+  --card-height: 140px;
+  --icon-size: 32px;
+
+  display: grid !important;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--grid-item-width), 1fr)
+  ) !important;
+  gap: var(--grid-gap) !important;
+  padding: var(--grid-padding) !important;
+  background: #f5f5f7 !important;
+}
+
+/* Grid Item */
+.noteshub-grid-layout .MuiListItem-root.MuiListItem-gutters {
+  height: var(--card-height) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  position: relative !important;
+  cursor: pointer !important;
+  background: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+  padding: 6px !important;
+  transition: all 0.2s ease !important;
+  overflow: hidden !important;
+}
+
+/* Item Icon */
+.noteshub-grid-layout .MuiListItemIcon-root {
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  min-width: unset !important;
+  margin: 0 8px 0 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  order: 0 !important;
+}
+
+/* Card Title */
+.noteshub-grid-layout .MuiListItemText-primary {
+  width: 100% !important;
+  font-size: 0.95rem !important;
+  line-height: 1.3 !important;
+  color: #1d1d1f !important;
+  text-align: left !important;
+  word-break: break-word !important;
+  margin-bottom: 4px !important;
+}
+
+/* Card Subtitle */
+.noteshub-grid-layout .MuiListItemText-secondary {
+  width: 100% !important;
+  font-size: 0.8rem !important;
+  color: #86868b !important;
+  opacity: 0.8 !important;
+  text-align: left !important;
+}
+
+/* Menu Button */
+.noteshub-grid-layout .MuiListItemSecondaryAction-root {
+  --menu-size: 28px;
+
+  position: absolute !important;
+  top: 6px !important;
+  right: 6px !important;
+  width: var(--menu-size) !important;
+  height: var(--menu-size) !important;
+
+  opacity: 0 !important;
+  z-index: 1 !important;
+  background: transparent !important;
+  transition: opacity 0.2s ease !important;
+  transform: none !important;
+}
+
+.noteshub-grid-layout .MuiListItemSecondaryAction-root .MuiIconButton-root {
+  padding: 4px !important;
+  width: var(--menu-size) !important;
+  height: var(--menu-size) !important;
+  margin: 0 !important;
+}
+
+.noteshub-grid-layout .MuiListItem-root:hover .MuiListItemSecondaryAction-root {
+  opacity: 1 !important;
+}
+
+.noteshub-grid-layout .MuiListItemSecondaryAction-root svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* View Toggle Button */
+.noteshub-view-toggle {
+  --toggle-size: 57px;
+  --toggle-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  position: fixed !important;
+  bottom: 0px !important;
+  right: 18px !important;
+  z-index: 9999 !important;
+
+  width: var(--toggle-size) !important;
+  height: var(--toggle-size) !important;
+  /* border-radius: 50% !important; */
+
+  background: white !important;
+  border: none !important;
+  box-shadow: var(--toggle-shadow) !important;
+
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Toggle Button Hover Effect */
+.noteshub-view-toggle:hover {
+  background: #f5f5f7 !important;
+  transform: scale(1.05) !important;
+}
+
+/* Toggle Button Icon */
+.noteshub-view-toggle svg {
+  width: 24px !important;
+  height: 24px !important;
+  color: #1d1d1f !important;
+}
+
+/* Remove Default Padding */
+.noteshub-grid-layout .MuiButtonBase-root.MuiListItemButton-root {
+  padding: 6px !important;
+}
+
+/* Remove Right Padding */
+.noteshub-grid-layout .MuiListItemButton-gutters {
+  padding-right: 6px !important;
+}
+
+/* Ensure Menu Button Position */
+.noteshub-grid-layout .MuiListItemSecondaryAction-root {
+  right: 6px !important;
+}
+
+/* Ensure Container Overflow */
+.noteshub-grid-layout .MuiListItem-root.MuiListItem-gutters {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+/* SVG Icon Containment */
+.noteshub-grid-layout .MuiListItem-root .MuiSvgIcon-root {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+/* Menu Button SVG Specific */
+.noteshub-grid-layout .MuiListItemSecondaryAction-root .MuiSvgIcon-root {
+  width: 20px !important;
+  height: 20px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+/* Grid Item Button */
+.noteshub-grid-layout
+  .MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+/* Ensure Button Content Alignment */
+.noteshub-grid-layout
+  .MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}

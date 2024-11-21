@@ -1,0 +1,24 @@
+{
+  "extName": {
+    "message": "NotesHub View Switcher",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Transform NotesHub's file list into a clean grid layout. Supports keyboard shortcuts (⌥+V/Alt+V)",
+    "description": "Extension description"
+  },
+  "toggleButtonTitle": {
+    "message": "Toggle list/grid view ($SHORTCUT$)",
+    "description": "Toggle button tooltip",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1",
+        "example": "⌥+V"
+      }
+    }
+  },
+  "toggleCommandDesc": {
+    "message": "Toggle list/grid view",
+    "description": "Command description"
+  }
+}

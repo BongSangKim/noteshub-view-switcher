@@ -1,0 +1,24 @@
+{
+  "extName": {
+    "message": "NotesHub 뷰 전환",
+    "description": "확장 프로그램 이름"
+  },
+  "extDescription": {
+    "message": "NotesHub의 파일 목록을 그리드 형태로 보기 좋게 전환합니다. 단축키(⌥+V/Alt+V) 지원",
+    "description": "확장 프로그램 설명"
+  },
+  "toggleButtonTitle": {
+    "message": "목록/그리드 뷰 전환 ($SHORTCUT$)",
+    "description": "토글 버튼 툴팁",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1",
+        "example": "⌥+V"
+      }
+    }
+  },
+  "toggleCommandDesc": {
+    "message": "목록/그리드 뷰 전환",
+    "description": "단축키 설명"
+  }
+}
