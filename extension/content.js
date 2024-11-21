@@ -65,7 +65,7 @@ class ViewSwitcher {
 
   async saveView(isGrid) {
     try {
-      await chrome.storage.sync.set({
+      await chrome.storage.local.set({
         [this.STORAGE_KEY]: isGrid ? "grid" : "list",
       });
     } catch (error) {
@@ -76,7 +76,7 @@ class ViewSwitcher {
   async restoreView() {
     try {
       const { [this.STORAGE_KEY]: savedView = "list" } =
-        await chrome.storage.sync.get(this.STORAGE_KEY);
+        await chrome.storage.local.get(this.STORAGE_KEY);
       const fileList = document.querySelector(".MuiList-root");
       const button = document.querySelector(`.${this.TOGGLE_CLASS}`);
       if (!fileList || !button) return;
